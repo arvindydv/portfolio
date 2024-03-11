@@ -1,15 +1,17 @@
 import React from "react";
 import "./Project.css";
+import { motion } from "framer-motion";
+import { bottomAnimation } from "../../Animation";
 
 export const Project = ({ name, img, des, tech }) => {
   return (
     <>
       <div className="project-data">
-        <div className="project-logo-container">
+        <motion.div className="project-logo-container" {...bottomAnimation}>
           <img src={img} alt="" />
-        </div>
+        </motion.div>
 
-        <div className="project-des-container">
+        <motion.div className="project-des-container" {...bottomAnimation}>
           <p className="project-title">{name}</p>
 
           <div className="project-des">
@@ -20,12 +22,9 @@ export const Project = ({ name, img, des, tech }) => {
             {tech.map((tech, idx) => (
               <span key={idx}>{tech}</span>
             ))}
-            {/* <span>NodeJs</span>
-            <span>NodeJs</span>
-            <span>NodeJs</span> */}
           </div>
           <button className="source-code">Source code</button>
-        </div>
+        </motion.div>
       </div>
     </>
   );
