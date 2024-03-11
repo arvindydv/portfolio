@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=GFS+Didot&family=Italiana&family=Open+Sans&family=Pacifico&family=Satisfy&display=swap");
+body,
+button,
+input,
+textarea {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "GFS Didot", serif;
+  font-family: "Italiana", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Satisfy", cursive;
+}
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.container-fluid {
+  display: flex;
+}
+.header {
+  background: linear-gradient(to bottom, #02060c, #04152d);
+  box-shadow: 6px 13px 17px 0px #02060c;
+  width: 25%;
+  color: white;
+  height: 668px;
+  position: fixed;
+  z-index: 9;
+}
+main {
+  background: linear-gradient(to bottom, #02060c, #04152d);
+  width: 75%;
+  position: relative;
+  left: 25%;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 3rem auto;
+}
+.w-full {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.w-50 {
+  width: 50%;
+}
+.items-center {
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  width: 100%;
+}
+.img-conatiner img {
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.tech {
+  width: 23%;
+  margin: 12px 0px;
+}
+.space-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 1rem 0px;
+}
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 57%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+section {
+  margin: 2rem 0px;
+}
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.project {
+  width: 31.8%;
+}

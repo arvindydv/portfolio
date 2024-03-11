@@ -1,0 +1,14 @@
+.tech-logo img {
+  border-radius: 50%;
+}
+.tech-logo {
+  background: #19376d;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-name {
+  margin-top: 8px;
+}

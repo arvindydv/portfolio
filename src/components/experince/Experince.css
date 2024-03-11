@@ -1,0 +1,35 @@
+.experince {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #19376d, #19376d00);
+  padding: 12px;
+  margin: 15px 0px;
+  border-radius: 8px;
+}
+.org-logo-container {
+  width: 20%;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+}
+.org-logo-container img {
+  width: 80%;
+  border-radius: 50%;
+}
+.org-des {
+  width: 78%;
+}
+.name-duration-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.duration {
+  display: flex;
+}
+.start {
+  margin-right: 15px;
+}

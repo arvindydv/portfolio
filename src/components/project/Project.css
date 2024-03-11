@@ -1,0 +1,43 @@
+.project-data {
+  width: 100%;
+  background: #19376d;
+  border-radius: 8px;
+}
+.project-logo-container {
+  width: 100%;
+}
+.project-logo-container img {
+  width: 100%;
+  border-radius: 8px;
+}
+.project-des-container {
+  padding: 1rem;
+}
+.project-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.project-des {
+  margin-bottom: 15px;
+}
+.tech-stack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tech-stack span {
+  background: #576cbc;
+  padding: 3px 14px;
+  border-radius: 27px;
+}
+.source-code {
+  width: 100%;
+  border-radius: 7px;
+  padding: 6px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
