@@ -10,41 +10,22 @@ import { Experince } from "../components/experince/Experince";
 import { experinces } from "../data/experince";
 import { Project } from "../components/project/Project";
 import { projects } from "../data/projects";
+import {
+  leftSideAnimation,
+  rightSideAnimation,
+  ThankYouAnimation,
+} from "../Animation";
+import { motion } from "framer-motion";
+import { saveAs } from "file-saver";
 
 export const Home = () => {
-  // console.log(skills);
-  useEffect(() => {
-    gsap.fromTo(
-      ".section-title",
-      {
-        x: -100,
-        opacity: 0,
-        delay: 0.8,
-        duration: 0.5,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 0.8,
-        duration: 0.5,
-      }
-    );
-    gsap.fromTo(
-      ".img-container",
-      {
-        x: 100,
-        opacity: 0,
-        delay: 0.8,
-        duration: 0.5,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 0.8,
-        duration: 0.5,
-      }
-    );
-  });
+  // download resume
+  const downloadHandler = () => {
+    const fileUrl = "../resume/arvindyadav-resume.pdf";
+    const fileName = "arvindyadav-resume.pdf";
+    saveAs(fileUrl, fileName);
+  };
+
   return (
     <>
       <div className="container-fluid">
@@ -69,16 +50,18 @@ export const Home = () => {
                   />
                 </div>
                 <div className="w-50 ">
-                  <div className="img-container">
+                  <motion.div className="img-container" {...rightSideAnimation}>
                     <img className="w-full" src={BannerImg} alt="" />
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
 
             {/* skills and experince */}
             <section id="skill-and-experince w-full">
-              <p className="section-title">Skills And Experince</p>
+              <motion.p className="section-title" {...leftSideAnimation}>
+                Skills And Experince
+              </motion.p>
               <div className="flex space-between w-full">
                 <div className="w-40 flex wrap space-between">
                   {skills.map((skill, idx) => {
@@ -112,7 +95,9 @@ export const Home = () => {
             {/* projects */}
 
             <section id="projects-section">
-              <p className="section-title">Projects</p>
+              <motion.p className="section-title" {...leftSideAnimation}>
+                Projects
+              </motion.p>
               <div className="projects">
                 {projects.map((project, idx) => {
                   return (
@@ -128,6 +113,73 @@ export const Home = () => {
                   );
                 })}
               </div>
+            </section>
+
+            <section id="thankyou">
+              <div className="thankyou-message-container">
+                <motion.h1
+                  {...ThankYouAnimation}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.3,
+                  }}
+                >
+                  Thank{" "}
+                </motion.h1>
+                <motion.h1
+                  {...ThankYouAnimation}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.4,
+                  }}
+                >
+                  You
+                </motion.h1>
+                <motion.h1
+                  {...ThankYouAnimation}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.5,
+                  }}
+                >
+                  For
+                </motion.h1>
+                <motion.h1
+                  {...ThankYouAnimation}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.6,
+                  }}
+                >
+                  Visiting!
+                </motion.h1>
+                <div className="thankyou-img">
+                  <motion.img
+                    {...ThankYouAnimation}
+                    className="w-full"
+                    src="https://simg.nicepng.com/png/small/980-9803933_emoji-emoji-pray-thankyou-thanks-praying-hands-emoji.png"
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.7,
+                    }}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <motion.div
+                className="resume"
+                {...ThankYouAnimation}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.8,
+                }}
+              >
+                <p className="text-center">Download Resume</p>
+                <span className="download-resume" onClick={downloadHandler}>
+                  <i className="fa-solid fa-download"></i>
+                </span>
+              </motion.div>
             </section>
           </div>
         </main>

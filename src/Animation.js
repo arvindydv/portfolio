@@ -43,5 +43,16 @@ export const bottomAnimation = {
   },
 };
 
+export const ThankYouAnimation = {
+  initial: {
+    y: 40,
+    opacity: 0,
+  },
+  whileInView: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 // export default leftSideAnimation;
 // export default rightSideAnimation;

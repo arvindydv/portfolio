@@ -104,3 +104,37 @@ section {
 .project {
   width: 31.8%;
 }
+
+#thankyou {
+  padding: 4rem 0rem;
+}
+.thankyou-message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thankyou-img {
+  width: 8%;
+}
+.thankyou-img img {
+  border-radius: 50%;
+}
+.thankyou-message-container h1 {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+.resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume p {
+  font-size: 2rem;
+  margin-right: 8px;
+}
+.resume span i {
+  font-size: 2rem;
+}
+i {
+  cursor: pointer;
+}
