@@ -2,7 +2,7 @@ import { MotionConfigContext } from "framer-motion";
 import React from "react";
 import "./Header.css";
 import { motion } from "framer-motion";
-import {leftSideAnimation} from "../../Animation";
+import { leftSideAnimation } from "../../Animation";
 
 export const Header = () => {
   return (
@@ -31,13 +31,34 @@ export const Header = () => {
       <div className="media-icon">
         <ul>
           <li>
-            <i className="fa-brands fa-linkedin"></i>
+            <a
+              className="linkedin"
+              href="https://www.linkedin.com/in/arvind-yadav-215831201/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
           </li>
           <li>
-            <i className="fa-solid fa-envelope"></i>
+            <a
+              className="mail"
+              href="mailto:arvindydv03@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-solid fa-envelope"></i>
+            </a>
           </li>
           <li>
-            <i className="fa-brands fa-github"></i>
+            <a
+              className="github"
+              href="https://github.com/arvindydv"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-github"></i>
+            </a>
           </li>
         </ul>
       </div>

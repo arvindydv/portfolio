@@ -21,7 +21,7 @@ import { saveAs } from "file-saver";
 export const Home = () => {
   // download resume
   const downloadHandler = () => {
-    const fileUrl = "../resume/arvindyadav-resume.pdf";
+    const fileUrl = "../arvindyadav-resume.pdf";
     const fileName = "arvindyadav-resume.pdf";
     saveAs(fileUrl, fileName);
   };
@@ -44,7 +44,7 @@ export const Home = () => {
                       1000,
                     ]}
                     wrapper="p"
-                    speed={50}
+                    speed={40}
                     style={{ fontSize: "1.5em", display: "inline-block" }}
                     repeat={Infinity}
                   />
@@ -56,6 +56,53 @@ export const Home = () => {
                 </div>
               </div>
             </div>
+
+            <section id="about">
+              <motion.p className="section-title" {...leftSideAnimation}>
+                About
+              </motion.p>
+              <div className="about-container">
+                <div className="about-img">
+                  <motion.img
+                    className="w-full"
+                    src="https://cdn-icons-png.flaticon.com/512/219/219970.png"
+                    alt=""
+                    {...leftSideAnimation}
+                  />
+                </div>
+                <motion.div className="about-des" {...rightSideAnimation}>
+                  {/* <motion.p {...rightSideAnimation}>
+                    I’m a Full Stack Developer with a strong foundation in HTML,
+                    CSS, JavaScript, Bootstrap, SQL, MongoDB, Node.js,
+                    Express.js, ReactJS, and Figma. I’m passionate about using
+                    these skills to develop innovative web applications that are
+                    user-friendly. I’m always eager to learn more about web
+                    development and marketing. I enjoy the challenge of coding
+                    and solving real-world problems. Currently, I’m looking for
+                    opportunities to join a team that values innovation and
+                    shares my enthusiasm for technology.
+                  </motion.p> */}
+                  <TypeAnimation
+                    sequence={[
+                      ` I’m a Full Stack Developer with a strong foundation in HTML,
+                      CSS, JavaScript, Bootstrap, SQL, MongoDB, Node.js,
+                      Express.js, ReactJS, and Figma. I’m passionate about using
+                      these skills to develop innovative web applications that are
+                      user-friendly. I’m always eager to learn more about web
+                      development and marketing. I enjoy the challenge of coding
+                      and solving real-world problems. Currently, I’m looking for
+                      opportunities to join a team that values innovation and
+                      shares my enthusiasm for technology.`,
+                      1000,
+                    ]}
+                    wrapper="p"
+                    speed={40}
+                    // style={{ fontSize: "1.5em", display: "inline-block" }}
+                    // repeat={Infinity}
+                  />
+                </motion.div>
+              </div>
+            </section>
 
             {/* skills and experince */}
             <section id="skill-and-experince w-full">

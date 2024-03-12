@@ -138,3 +138,25 @@ section {
 i {
   cursor: pointer;
 }
+#about {
+  /* background: #0c0c0c99; */
+  width: 100%;
+  border-radius: 12px;
+  /* padding-left: 1rem; */
+  /* padding-bottom: 2rem; */
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+.about-img {
+  width: 40%;
+}
+.about-des {
+  width: 52%;
+}
+.about-des p {
+  font-size: 1.3rem;
+}
