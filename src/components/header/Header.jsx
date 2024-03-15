@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="logo-container">
         <div className="logo-img">
           <img
-            src="https://media.licdn.com/dms/image/D4D03AQHOQRTvNekKzA/profile-displayphoto-shrink_200_200/0/1667706204416?e=1710374400&v=beta&t=xcVcxFXBK4jhRVUv5k7mynE9DtTME5OP6RPanu9h4tw"
+            src="https://media.licdn.com/dms/image/D4D03AQHOQRTvNekKzA/profile-displayphoto-shrink_800_800/0/1667706204416?e=1715817600&v=beta&t=r6tNt7XFIFVOBMK6GCAnRH2UZV4ytPT5DWnCpn8NBYQ"
             alt=""
           />
         </div>
